@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Портфолио | Патенко В.В.</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Патенко Владимир</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">Обо мне</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Портфолио</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Услуги</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 hero-content">
+                        <h1 class="display-4 fw-bold mb-3">Патенко Владимир Вадимович</h1>
+                        <p class="lead mb-4">Студент ЯГТУ, 2 курс бакалавриата<br>Направление "Программная инженерия"</p>
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <span class="skill-badge">HTML/CSS</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">Node.js</span>
+                            <span class="skill-badge">Golang</span>
+                            <span class="skill-badge">Python (Django)</span>
+                            <span class="skill-badge">C++</span>
+                            <span class="skill-badge">PostgreSQL</span>
+                            <span class="skill-badge">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block text-center">
+                        <div class="position-relative">
+                            <div style="width: 300px; height: 300px; border-radius: 50%; background: linear-gradient(135deg, #ffffff 0%, #e0e6ff 100%); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 0;"></div>
+                            <div style="width: 280px; height: 280px; border-radius: 50%; background: url('/static/images/me.jpg') center/cover; position: relative; z-index: 1; margin: 0 auto;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">Обо мне</h2>
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <img src="/static/images/me.jpg" alt="My photo" class="about-img">
+                    </div>
+                    <div class="col-lg-7">
+                        <h3 class="mb-3">Привет! Я Владимир, студент и начинающий разработчик</h3>
+                        <p class="lead mb-4">Я учусь на втором курсе бакалавриата Ярославского государственного технического университета по направлению "Программная инженерия".</p>
+                        <div class="mb-4">
+                            <h4>Мои навыки:</h4>
+                            <div class="d-flex flex-wrap">
+                                <span class="skill-badge">Frontend (HTML, CSS, JS)</span>
+                                <span class="skill-badge">Backend (Node.js, Golang) </span>
+                                <span class="skill-badge">Базы данных (PostgreSQL, MySQL) </span>
+                                <span class="skill-badge">Python (стандартные библиотеки, Django) </span>
+                                <span class="skill-badge">C++ </span>
+                                <span class="skill-badge">Работа в OS Windows и OS Linux</span>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h5>Разработка оконных приложений на C++</h5>
+                                <p>Имел опыт в создании приложений для Windows OS с использованием C++ и фреймворка Qt.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h5>Веб-разработка</h5>
+                                <p>Разрабатывал полнофункциональные веб-приложения, включая как фронтенд, так и бэкенд части.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h5>Работа в ОС</h5>
+                                <p>Выполнял поставленные задачи в ОС Windows и Linux (Ubuntu).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <h2 class="section-title">Портфолио</h2>
+                <div class="portfolio-container">
+                    <div class="text-center p-5">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <p>Веб-приложение дял киностудии (на фото фрагмент администраторской панели)</p>
+                                    <img src="/static/images/cinema.jpg" class="d-block w-100" alt="Веб-приложение дял киностудии">
+                                </div>
+                                <div class="carousel-item">
+                                    <p>Веб-приложение для строительной компании (на фото основная страница)</p>
+                                    <img src="/static/images/JKH.jpg" class="d-block w-100" alt="Веб-приложение для строительной компании">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title">Услуги</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card card h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="service-icon">
+                                    <i class="bi bi-code-slash"></i>
+                                </div>
+                                <h4 class="card-title">Веб-разработка</h4>
+                                <p class="card-text">Создание современных адаптивных веб-сайтов и веб-приложений с использованием HTML, CSS, JavaScript и фреймворков.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card card h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="service-icon">
+                                    <i class="bi bi-server"></i>
+                                </div>
+                                <h4 class="card-title">Backend разработка</h4>
+                                <p class="card-text">Разработка серверной части приложений на Node.js и Golang с использованием различных баз данных.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card card h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="service-icon">
+                                    <i class="bi bi-window"></i>
+                                </div>
+                                <h4 class="card-title">Десктоп приложения</h4>
+                                <p class="card-text">Разработка настольных приложений для Windows с использованием C++ и современных фреймворков.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card card h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="service-icon">
+                                    <i class="bi bi-database"></i>
+                                </div>
+                                <h4 class="card-title">Работа с базами данных</h4>
+                                <p class="card-text">Проектирование, разработка и оптимизация баз данных PostgreSQL и MySQL.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card card h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="service-icon">
+                                    <i class="bi bi-terminal"></i>
+                                </div>
+                                <h4 class="card-title">Администрирование</h4>
+                                <p class="card-text">Настройка и обслуживание серверов на Windows и Linux, сетевых решений и инфраструктуры.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Контакты</h2>
+                <div class="row">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h3 class="mb-4">Свяжитесь со мной</h3>
+                        <p class="lead mb-4">Если у вас есть вопросы или предложения, не стесняйтесь обращаться!</p>
+
+                        <div class="mb-4">
+                            <h5><i class="bi bi-envelope me-2"></i> Email</h5>
+                            <p>vova.patenko505@mail.ru</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5><i class="bi bi-telephone me-2"></i> Телефон</h5>
+                            <p>+7 (960) 744-23-74</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5><i class="bi bi-geo-alt me-2"></i> Местоположение</h5>
+                            <p>Ярославль, Россия</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="contact-form">
+                            <form>
+                                <div class="mb-3">
+                                    <p>Как к вам обращаться (не более 50 символов):</p>
+                                    <input id="name" type="text" class="form-control" placeholder="Иван" required>
+                                </div>
+                                <div class="mb-3">
+                                    <p>Введите адрес вашего почтового ящика (не более 64 символов):</p>
+                                    <input id="mail_box" type="email" class="form-control" placeholder="example@mail.ru" required>
+                                </div>
+                                <div class="mb-3">
+                                    <p>Укажите тему вашего сообщения (не более 50 символов):</p>
+                                    <input id="topic" type="text" class="form-control" placeholder="Вакансия">
+                                </div>
+                                <div class="mb-3">
+                                    <p>Введите сообщение (не более 512 символов):</p>
+                                    <textarea id="message" class="form-control" rows="5" placeholder="Заинтересованы в ваших услугах. Свяжитесь с нами для обсуждения деталей" required></textarea>
+                                </div>
+                                <button type="button" id="sendMessage" class="btn btn-primary w-100">Отправить сообщение</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <h3 class="mb-3">Патенко Владимир</h3>
+                        <p>Студент ЯГТУ по направлению "Программная инженерия"</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <div class="social-links mt-3">
+                            <h3>Соцсети и проекты:</h3>
+                            <a href="https://github.com/chitaatmaa"><i class="bi bi-github"></i></a>
+                            <a href="https://t.me/palimir"><i class="bi bi-telegram"></i></a>
+                            <a href="https://vk.com/ld749377540"><i class="bi bi-vk"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/static/js/main.js"></script>
+    </body>
+</html>
